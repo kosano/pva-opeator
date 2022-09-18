@@ -1,0 +1,24 @@
+# permissions for end users to edit persistentvolumeautocapacities.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: persistentvolumeautocapacity-editor-role
+rules:
+- apiGroups:
+  - pva.kosano.io
+  resources:
+  - persistentvolumeautocapacities
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - pva.kosano.io
+  resources:
+  - persistentvolumeautocapacities/status
+  verbs:
+  - get

@@ -1,0 +1,6 @@
+apiVersion: pva.kosano.io/v1
+kind: PersistentVolumeAutocapacity
+metadata:
+  name: persistentvolumeautocapacity-sample
+spec:
+  # TODO(user): Add fields here
